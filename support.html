@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spendly — Support</title>
+<style>
+  :root { --accent:#5B6CFF; --ink:#1c2030; --muted:#5b6178; --card:#fff; --bg:#f4f5fa; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 72px; }
+  header { display:flex; align-items:center; gap:14px; margin-bottom:28px; }
+  .mark { width:52px; height:52px; border-radius:14px; background:linear-gradient(135deg,#5B6CFF,#30D158); }
+  h1 { font-size:30px; margin:0; line-height:1.2; }
+  .sub { color:var(--muted); margin:6px 0 0; }
+  .langs { display:flex; gap:8px; margin:22px 0 28px; flex-wrap:wrap; }
+  .langs button { border:1px solid #d9dce8; background:#fff; color:var(--ink); padding:7px 13px; border-radius:999px; font:inherit; font-size:14px; cursor:pointer; }
+  .langs button[aria-pressed="true"] { background:var(--accent); border-color:var(--accent); color:#fff; }
+  section[data-lang] { display:none; }
+  section[data-lang].on { display:block; }
+  .card { background:var(--card); border-radius:18px; padding:24px 26px; box-shadow:0 8px 30px rgba(20,26,60,.06); margin-bottom:18px; }
+  h2 { font-size:19px; margin:24px 0 8px; }
+  h2:first-child { margin-top:0; }
+  h3 { font-size:16px; margin:18px 0 4px; }
+  p, li { color:#2c3145; }
+  ul { padding-left:20px; }
+  a { color:var(--accent); }
+  .pill { display:inline-block; background:#eef0ff; color:#4450c9; border-radius:999px; padding:2px 10px; font-size:13px; }
+  footer { color:var(--muted); font-size:14px; margin-top:34px; text-align:center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark" aria-hidden="true"></div>
+    <div>
+      <h1>Spendly</h1>
+      <p class="sub">Money, Car &amp; Time</p>
+    </div>
+  </header>
+
+  <div class="langs" role="group" aria-label="Language">
+    <button data-set="en" aria-pressed="true">English</button>
+    <button data-set="fr" aria-pressed="false">Français</button>
+    <button data-set="de" aria-pressed="false">Deutsch</button>
+    <button data-set="es" aria-pressed="false">Español</button>
+  </div>
+
+  <section data-lang="en" class="on">
+    <div class="card">
+      <h2>Support</h2>
+      <p>Spendly is one app with three modules: <strong>Time</strong> (home), <strong>Money</strong> and <strong>Car</strong>. Each module keeps its own Records and Stats, and Settings is shared.</p>
+
+      <h3>Time</h3>
+      <p>Tap an activity to start a timer, tap it again to stop. Several timers can run at once. The 24-hour ring fills with the day; the Stats tab shows day, week, month and year. A finished focus block posts one reminder.</p>
+
+      <h3>Money</h3>
+      <p>Tap + to add an expense. The month picker filters the summary and the list together. Temporary Cards track a prepaid or company card: a starting balance, top-ups and the expenses charged to it.</p>
+
+      <h3>Car</h3>
+      <p>Add a vehicle, then record fuel or charge, maintenance, oil, tires, battery and other expenses. “Scan Fuel Receipt” reads the pump display on-device; the odometer is always typed. Check cards show when oil, tires or the battery are due.</p>
+
+      <h3>Backup and restore</h3>
+      <p>Settings → Data → Prepare backup shares one SQLite file containing all three modules. Import validates the file, stages it, and swaps it in the next time Spendly starts; the previous file is kept as <span class="pill">pre-import-backup.sqlite</span>.</p>
+
+      <h3>Membership</h3>
+      <p>Spendly is free for 7 days, then one non-consumable purchase unlocks all three modules. Use <strong>Restore Purchases</strong> on another device. If the trial ended, records remain readable and exportable.</p>
+
+      <h3>Notifications</h3>
+      <p>Focus reminders, oil, tire and battery reminders are optional. If they do not appear, check iOS Settings → Notifications → Spendly.</p>
+
+      <h3>Contact</h3>
+      <p>Email <a href="mailto:vegaodm@outlook.com">vegaodm@outlook.com</a> with your iOS version, device and a short description. Please do not send a backup unless we ask for one.</p>
+    </div>
+  </section>
+
+  <section data-lang="fr">
+    <div class="card">
+      <h2>Assistance</h2>
+      <p>Spendly est une seule app avec trois modules : <strong>Temps</strong> (accueil), <strong>Argent</strong> et <strong>Voiture</strong>. Chaque module garde ses écrans Records et Stats ; les Réglages sont communs.</p>
+
+      <h3>Temps</h3>
+      <p>Touchez une activité pour démarrer, touchez-la à nouveau pour arrêter. Plusieurs minuteurs peuvent tourner ensemble. L’anneau de 24 h se remplit ; l’onglet Stats montre jour, semaine, mois et année. Un bloc de concentration terminé envoie un rappel.</p>
+
+      <h3>Argent</h3>
+      <p>Touchez + pour ajouter une dépense. Le sélecteur de mois filtre le résumé et la liste ensemble. Les cartes temporaires suivent une carte prépayée ou d’entreprise : solde initial, rechargements et dépenses débitées.</p>
+
+      <h3>Voiture</h3>
+      <p>Ajoutez un véhicule, puis enregistrez carburant ou recharge, entretien, huile, pneus, batterie et autres dépenses. « Scanner le ticket » lit l’affichage de la pompe sur l’appareil ; le compteur se saisit toujours. Les cartes indiquent quand l’huile, les pneus ou la batterie sont à vérifier.</p>
+
+      <h3>Sauvegarde et restauration</h3>
+      <p>Réglages → Données → Préparer une sauvegarde partage un seul fichier SQLite contenant les trois modules. L’import valide le fichier, le met en attente et l’installe au prochain démarrage ; l’ancien fichier est conservé sous <span class="pill">pre-import-backup.sqlite</span>.</p>
+
+      <h3>Abonnement</h3>
+      <p>Spendly est gratuit 7 jours, puis un achat unique débloque les trois modules. Utilisez <strong>Restaurer les achats</strong> sur un autre appareil. Après l’essai, les données restent lisibles et exportables.</p>
+
+      <h3>Notifications</h3>
+      <p>Les rappels de concentration, huile, pneus et batterie sont facultatifs. S’ils n’apparaissent pas, vérifiez Réglages iOS → Notifications → Spendly.</p>
+
+      <h3>Contact</h3>
+      <p>Écrivez à <a href="mailto:vegaodm@outlook.com">vegaodm@outlook.com</a> avec la version d’iOS, l’appareil et une courte description. N’envoyez pas de sauvegarde sans demande.</p>
+    </div>
+  </section>
+
+  <section data-lang="de">
+    <div class="card">
+      <h2>Support</h2>
+      <p>Spendly ist eine App mit drei Modulen: <strong>Zeit</strong> (Start), <strong>Geld</strong> und <strong>Auto</strong>. Jedes Modul behält Records und Stats; die Einstellungen sind gemeinsam.</p>
+
+      <h3>Zeit</h3>
+      <p>Tippe eine Aktivität an, um zu starten, tippe erneut zum Stoppen. Mehrere Timer laufen gleichzeitig. Der 24-Stunden-Ring füllt sich; Stats zeigt Tag, Woche, Monat und Jahr. Ein beendeter Fokusblock sendet eine Erinnerung.</p>
+
+      <h3>Geld</h3>
+      <p>Tippe +, um eine Ausgabe anzulegen. Der Monatswähler filtert Zusammenfassung und Liste gemeinsam. Temporäre Karten verwalten eine Prepaid- oder Firmenkarte: Startsaldo, Aufladungen und belastete Ausgaben.</p>
+
+      <h3>Auto</h3>
+      <p>Füge ein Fahrzeug hinzu und erfasse Tanken/Laden, Wartung, Öl, Reifen, Batterie und sonstige Ausgaben. „Tankbeleg scannen“ liest die Zapfsäule auf dem Gerät; der Kilometerstand wird immer eingegeben. Prüfkarten zeigen fälliges Öl, Reifen oder Batterie.</p>
+
+      <h3>Sicherung und Wiederherstellung</h3>
+      <p>Einstellungen → Daten → Sicherung vorbereiten teilt eine SQLite-Datei mit allen drei Modulen. Der Import prüft die Datei, legt sie beiseite und tauscht sie beim nächsten Start ein; die alte Datei bleibt als <span class="pill">pre-import-backup.sqlite</span>.</p>
+
+      <h3>Mitgliedschaft</h3>
+      <p>Spendly ist 7 Tage kostenlos, danach schaltet ein einmaliger Kauf alle drei Module frei. Nutze <strong>Käufe wiederherstellen</strong> auf einem anderen Gerät. Nach der Testphase bleiben Daten lesbar und exportierbar.</p>
+
+      <h3>Mitteilungen</h3>
+      <p>Fokus-, Öl-, Reifen- und Batterie-Erinnerungen sind optional. Falls sie fehlen: iOS-Einstellungen → Mitteilungen → Spendly prüfen.</p>
+
+      <h3>Kontakt</h3>
+      <p>Schreibe an <a href="mailto:vegaodm@outlook.com">vegaodm@outlook.com</a> mit iOS-Version, Gerät und kurzer Beschreibung. Bitte keine Sicherung ohne Anfrage senden.</p>
+    </div>
+  </section>
+
+  <section data-lang="es">
+    <div class="card">
+      <h2>Soporte</h2>
+      <p>Spendly es una app con tres módulos: <strong>Tiempo</strong> (inicio), <strong>Dinero</strong> y <strong>Coche</strong>. Cada módulo conserva sus pantallas Records y Stats; los Ajustes son comunes.</p>
+
+      <h3>Tiempo</h3>
+      <p>Toca una actividad para iniciar y otra vez para detener. Varios temporizadores pueden correr a la vez. El anillo de 24 h se llena; Stats muestra día, semana, mes y año. Un bloque de concentración terminado envía un recordatorio.</p>
+
+      <h3>Dinero</h3>
+      <p>Toca + para añadir un gasto. El selector de mes filtra el resumen y la lista a la vez. Las tarjetas temporales gestionan una tarjeta prepago o de empresa: saldo inicial, recargas y gastos cargados.</p>
+
+      <h3>Coche</h3>
+      <p>Añade un vehículo y registra combustible o carga, mantenimiento, aceite, neumáticos, batería y otros gastos. «Escanear ticket» lee el surtidor en el dispositivo; el odómetro siempre se escribe. Las tarjetas indican cuándo toca aceite, neumáticos o batería.</p>
+
+      <h3>Copia y restauración</h3>
+      <p>Ajustes → Datos → Preparar copia comparte un único archivo SQLite con los tres módulos. La importación valida el archivo, lo deja en espera y lo instala al volver a abrir Spendly; el archivo anterior se conserva como <span class="pill">pre-import-backup.sqlite</span>.</p>
+
+      <h3>Membresía</h3>
+      <p>Spendly es gratis 7 días; después, una compra única desbloquea los tres módulos. Usa <strong>Restaurar compras</strong> en otro dispositivo. Al terminar la prueba, los datos siguen siendo legibles y exportables.</p>
+
+      <h3>Notificaciones</h3>
+      <p>Los recordatorios de concentración, aceite, neumáticos y batería son opcionales. Si no aparecen, revisa Ajustes de iOS → Notificaciones → Spendly.</p>
+
+      <h3>Contacto</h3>
+      <p>Escribe a <a href="mailto:vegaodm@outlook.com">vegaodm@outlook.com</a> con la versión de iOS, el dispositivo y una breve descripción. No envíes una copia de seguridad sin que la pidamos.</p>
+    </div>
+  </section>
+
+  <footer>© 2026 Vega · <a href="index.html">Privacy</a></footer>
+</div>
+<script>
+  const buttons = document.querySelectorAll('.langs button');
+  const sections = document.querySelectorAll('section[data-lang]');
+  function setLang(lang) {
+    sections.forEach(s => s.classList.toggle('on', s.dataset.lang === lang));
+    buttons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.set === lang)));
+    document.documentElement.lang = lang;
+    try { localStorage.setItem('spendly-lang', lang); } catch (e) {}
+  }
+  buttons.forEach(b => b.addEventListener('click', () => setLang(b.dataset.set)));
+  const params = new URLSearchParams(location.search);
+  const initial = params.get('lang') || (() => { try { return localStorage.getItem('spendly-lang'); } catch (e) { return null; } })();
+  if (initial) setLang(initial);
+</script>
+</body>
+</html>
